@@ -24,6 +24,7 @@ class Counter {
         
         c2.count = 16;
         Counter.count=15;
+        
               System.out.println("Counter.count: " + Counter.count); // Accessing static attribute directly through the class
 
         Counter.printTotalCount(); // Calling a static method
