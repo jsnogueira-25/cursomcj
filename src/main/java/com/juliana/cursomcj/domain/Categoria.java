@@ -60,5 +60,7 @@ public Categoria () {
 		return id == other.id;
 	}
 
-
 }
+
+
+
