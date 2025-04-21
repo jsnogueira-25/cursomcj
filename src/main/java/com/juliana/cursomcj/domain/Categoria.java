@@ -2,6 +2,7 @@ package com.juliana.cursomcj.domain;
 
 import java.io.Serializable;
 import java.util.Objects;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,25 +14,31 @@ public class Categoria implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
+	private Long id;
+	
 	private String nome;
 	
 	//construtor
+	
 public Categoria () {
 	
 }
 
-	public Categoria(int id, String nome) {
+	public Categoria(Long id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
 	}
 
-	public int getId() {
+	public Categoria(Object object, String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
